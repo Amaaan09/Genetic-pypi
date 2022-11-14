@@ -140,7 +140,7 @@ class LogisticRegression:
 
             # stopping criterion
             if rankedSolutions[0][0] < 0.5:
-                print("Mila bhai")
+                print("Got the result")
                 break
             
             # Selection
@@ -148,15 +148,16 @@ class LogisticRegression:
             # select the top 100 solutions
             bestSolutions = rankedSolutions[:100]
 
+            # maintaning a record of the loss function
             self.plot_arr.append(bestSolutions[0][0])
 
 
             # s = (x,y,z)
             elements = []
             for s in bestSolutions:
-                elements.append(s[1][0]) #s
-                elements.append(s[1][1]) #s
-                elements.append(s[1][2]) #s
+                elements.append(s[1][0]) # weights
+                elements.append(s[1][1]) # weights
+                elements.append(s[1][2]) # bias
 
 
             # crossover and mutation
