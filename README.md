@@ -1,5 +1,5 @@
 # Genetic-pypi
-Linear and Logistic Regression with Genetic algorithm instead of gradient descent
+
 
 We first here have a simple example of genetic algorithm (genetic_algorithm.py)
 
